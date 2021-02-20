@@ -1,0 +1,27 @@
+.controls,
+.controls > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls > div {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px, rgba(0, 0, 0, 0.24) 0 1px 2px;
+    background-color: var(--clr-inactive);
+    color: var(--clr-inactive-text);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.controls > div:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-primary-icon);
+}
+
+.controls > div:not(:last-child) {
+    margin-right: 1.5rem;
+}

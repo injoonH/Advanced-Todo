@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./scripts/main.js"></script>
+    <title>Advanced Todo</title>
+</head>
+
+<body>
+    <label class="theme-toggle">
+        <input type="checkbox">
+        <span class="theme-toggle__slider"></span>
+    </label>
+    <main>
+        <section class="clock">
+            <span class="clock__hour-min"></span>
+            <span class="clock__sec"></span>
+        </section>
+        <section class="greeting">
+            <span class="greeting__words-front">Good Evening</span>
+            <span class="greeting__user-name">Lynn</span>
+            <form class='greeting__ask-name invisible'>
+                <input type="text" placeholder="Name?" maxlength="10">
+            </form>
+        </section>
+        <section class="controls">
+            <div class="controls__todo-btn">
+                <i class="fas fa-check"></i>
+            </div>
+            <div class="controls__calendar-btn">
+                <i class="far fa-calendar-check"></i>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

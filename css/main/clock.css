@@ -1,0 +1,13 @@
+.clock {
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+}
+
+.clock__hour-min {
+    font-size: 5rem;
+}
+
+.clock__sec {
+    font-size: 2rem;
+    transform: translate(0, -0.1rem);
+}

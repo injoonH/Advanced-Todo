@@ -1,0 +1,14 @@
+:root {
+    --clr-text: #000;
+
+    --clr-primary: #ff4754;
+    --clr-primary-light: #e6868c;
+    --clr-primary-icon: #fff;
+
+    --clr-inactive: #b1b1b1;
+    --clr-inactive-text: #666666;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}

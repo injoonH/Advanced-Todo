@@ -1,0 +1,17 @@
+.greeting {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.greeting__ask-name > input {
+    font-size: 3rem;
+    width: 10ch;
+}
+.greeting__ask-name > input::placeholder {
+    color: var(--clr-inactive-text);
+    transition: color 0.2s;
+}
+
+.greeting__ask-name > input:focus::placeholder {
+    color: var(--clr-primary-light);
+}
