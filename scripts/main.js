@@ -5,7 +5,7 @@ const clock = new Clock(
     document.querySelector(".clock__sec")
 );
 
-const greetingTime = document.querySelector(".greeting__words-front");
+const greetingTime = document.querySelector(".greeting__time");
 const greetingName = document.querySelector(".greeting__user-name");
 const greetingForm = document.querySelector(".greeting__ask-name");
 

@@ -1,6 +1,19 @@
 .greeting {
-    font-size: 3rem;
     margin-bottom: 4rem;
+}
+
+.greeting__time {
+    font-size: 2rem;
+}
+
+.greeting__user-name {
+    font-size: 3rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary);
+}
+
+.greeting__ask-name {
+    font-size: 3rem;
 }
 
 .greeting__ask-name > input {
