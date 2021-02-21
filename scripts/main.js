@@ -55,8 +55,14 @@ showBackgroundBtn.addEventListener("change", () => {
 
 const todoBtn = document.querySelector(".controls__todo-btn");
 todoBtn.addEventListener("click", () => {
-    // document.querySelector(".todo").classList.toggle("invisible");
     document.querySelector(".todo").classList.toggle("hide-right");
+    document.querySelector(".calendar").classList.add("hide-right");
+});
+
+const calendarBtn = document.querySelector(".controls__calendar-btn");
+calendarBtn.addEventListener("click", () => {
+    document.querySelector(".todo").classList.add("hide-right");
+    document.querySelector(".calendar").classList.toggle("hide-right");
 });
 
 function init() {

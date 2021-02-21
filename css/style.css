@@ -7,6 +7,7 @@
 
 @import "./main/main.css";
 @import "./todo/todo.css";
+@import "./calendar/calendar.css";
 
 body {
     background-position: center;
@@ -42,7 +43,8 @@ body.background-only::before {
 }
 
 .hide-right {
-    transform: translateX(45rem);
+    /* transform: translateX(45rem); */
+    right: -45rem;
 }
 
 .invisible,
