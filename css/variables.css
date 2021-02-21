@@ -1,5 +1,6 @@
 :root {
     --clr-text: #000;
+    --clr-text-inverted: #fff;
     --clr-backgorund: rgba(255, 255, 255, 0.6);
 
     --clr-primary: #ff4754;

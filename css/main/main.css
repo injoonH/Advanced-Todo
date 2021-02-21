@@ -2,12 +2,12 @@
 @import "clock.css";
 @import "greeting.css";
 @import "controls.css";
+@import "weather.css";
 
-main {
+.main-wrap {
     background-color: var(--clr-backgorund);
+    backdrop-filter: var(--blur);
     box-shadow: var(--shadow-deep);
     padding-top: 2rem;
     border-radius: 0.6rem;
-
-    backdrop-filter: var(--blur);
 }

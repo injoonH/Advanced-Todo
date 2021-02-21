@@ -1,5 +1,8 @@
 export default class Weather {
-    constructor() {
+    constructor(thermometerElement, temperatureElement, locationElement) {
+        this.thermometerElement = thermometerElement;
+        this.temperatureElement = temperatureElement;
+        this.locationElement = locationElement;
         this.API_KEY = `a746821e9c164991a4b6e385a4fc1852`;
     }
 
@@ -11,7 +14,18 @@ export default class Weather {
                 return response.json();
             })
             .then((json) => {
-                console.log(json);
+                const temperature = json.main.temp;
+                const location = json.name;
+                let thermometer;
+                if (temperature < 0) thermometer = "empty";
+                else if (temperature < 10) thermometer = "quarter";
+                else if (temperature < 20) thermometer = "half";
+                else if (temperature < 30) thermometer = "three-quarters";
+                else thermometer = "full";
+
+                this.thermometerElement.innerHTML = ` <i class="fas fa-thermometer-${thermometer}"></i>`;
+                this.temperatureElement.innerText = temperature;
+                this.locationElement.innerText = location;
             });
     }
 

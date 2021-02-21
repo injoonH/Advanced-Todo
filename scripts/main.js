@@ -23,7 +23,11 @@ const todo = new Todo(
     document.querySelector(".todo-new")
 );
 
-const weather = new Weather();
+const weather = new Weather(
+    document.querySelector(".weather-thermometer"),
+    document.querySelector(".weather-temperature"),
+    document.querySelector(".weather-location")
+);
 
 function init() {
     document.body.style.backgroundImage = `url(./images/landscape-${Math.floor(

@@ -19,25 +19,32 @@
     </label>
 
     <main>
-        <section class="clock">
-            <span class="clock__hour-min"></span>
-            <span class="clock__sec"></span>
-        </section>
-        <section class="greeting">
-            <span class="greeting__time"></span>
-            <span class="greeting__user-name"></span>
-            <form class='greeting__ask-name invisible'>
-                <input type="text" placeholder="Name?" maxlength="10">
-            </form>
-        </section>
-        <section class="controls">
-            <div class="controls__todo-btn">
-                <i class="fas fa-check"></i>
-            </div>
-            <div class="controls__calendar-btn">
-                <i class="far fa-calendar-check"></i>
-            </div>
-        </section>
+        <article class="main-wrap">
+            <section class="clock">
+                <span class="clock__hour-min"></span>
+                <span class="clock__sec"></span>
+            </section>
+            <section class="greeting">
+                <span class="greeting__time"></span>
+                <span class="greeting__user-name"></span>
+                <form class='greeting__ask-name invisible'>
+                    <input type="text" placeholder="Name?" maxlength="10">
+                </form>
+            </section>
+            <section class="controls">
+                <div class="controls__todo-btn">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class="controls__calendar-btn">
+                    <i class="far fa-calendar-check"></i>
+                </div>
+            </section>
+        </article>
+        <article class="weather">
+            <span class="weather-thermometer"></span>
+            <span class="weather-temperature"></span>
+            <span class="weather-location"></span>
+        </article>
     </main>
 
     <aside class="todo">

@@ -1,0 +1,16 @@
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-text-inverted);
+    font-size: 1rem;
+    font-weight: var(--fw-light);
+}
+
+.weather > * {
+    padding: 0.5rem;
+}
+
+.weather-temperature::after {
+    content: "°C";
+}
