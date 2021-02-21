@@ -1,6 +1,6 @@
 :root {
     --clr-text: #000;
-    --clr-backgorund: #fff;
+    --clr-backgorund: #ffffff99;
 
     --clr-primary: #ff4754;
     --clr-primary-light: #e6868c;
@@ -16,4 +16,6 @@
     --shadow-light: rgba(0, 0, 0, 0.12) 0 1px 3px, rgba(0, 0, 0, 0.24) 0 1px 2px;
     --shadow-deep: rgba(50, 50, 93, 0.25) 0 6px 12px -2px,
         rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+
+    --blur: blur(5px);
 }

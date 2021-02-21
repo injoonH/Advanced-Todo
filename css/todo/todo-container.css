@@ -1,6 +1,7 @@
 .todo-container {
     background-color: var(--clr-backgorund);
     box-shadow: var(--shadow-deep);
+    backdrop-filter: var(--blur);
     padding: 1rem;
     border-radius: 0.6rem;
     width: 36rem;
@@ -12,6 +13,7 @@
 .todo-item {
     background-color: var(--clr-backgorund);
     box-shadow: var(--shadow-light);
+    backdrop-filter: var(--blur);
     border-radius: 0.6rem;
     display: flex;
 }

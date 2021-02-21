@@ -2,3 +2,12 @@
 @import "clock.css";
 @import "greeting.css";
 @import "controls.css";
+
+main {
+    background-color: var(--clr-backgorund);
+    box-shadow: var(--shadow-deep);
+    padding: 2rem;
+    border-radius: 0.6rem;
+
+    backdrop-filter: var(--blur);
+}

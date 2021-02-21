@@ -30,6 +30,9 @@ function init() {
     }, 1000);
     greet.sayHello();
     todo.load();
+    document.body.style.backgroundImage = `url(./images/landscape-${Math.floor(
+        Math.random() * 9
+    )}.jpg)`;
 }
 
 init();

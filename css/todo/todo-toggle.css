@@ -2,7 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: var(--clr-backgorund);
+    box-shadow: var(--shadow-deep);
+    padding: 1rem;
+    border-radius: 0.6rem;
+
     margin-bottom: 2rem;
+    backdrop-filter: var(--blur);
 }
 
 .todo-toggle-container > span {
@@ -17,9 +24,7 @@
 }
 
 .todo-toggle > input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+    display: none;
 }
 
 .todo-toggle__slider {

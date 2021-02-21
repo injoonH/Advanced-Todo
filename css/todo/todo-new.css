@@ -7,6 +7,7 @@
     border-radius: 0.6rem;
     margin-bottom: 2rem;
     width: 36rem;
+    backdrop-filter: var(--blur);
 }
 
 .todo-new__input-container {
