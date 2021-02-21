@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: var(--fw-regular);
+}
+
+input,
+textarea {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.invisible,
+.hide {
+    display: none;
+}

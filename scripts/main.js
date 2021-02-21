@@ -29,16 +29,28 @@ const weather = new Weather(
     document.querySelector(".weather-location")
 );
 
-const showBackgroundBtn = document.querySelector(".show-background");
-showBackgroundBtn.addEventListener("click", () => {
+const showBackgroundBtn = document.querySelector(".show-background > input");
+showBackgroundBtn.addEventListener("change", () => {
     document.body.classList.toggle("background-only");
     const children = document.body.children;
     for (let i = 1; i < children.length - 2; i++) {
-        children[i].classList.toggle("become-transparent");
-        children[i].addEventListener("transitioned", () => {
-            children[i].classList.toggle("invisible");
-        });
+        if (showBackgroundBtn.checked) {
+            children[i].classList.add("become-transparent");
+            setTimeout(() => {
+                children[i].classList.add("hide");
+            }, 400);
+        } else {
+            children[i].classList.remove("hide");
+            setTimeout(() => {
+                children[i].classList.remove("become-transparent");
+            }, 400);
+        }
     }
+});
+
+const todoBtn = document.querySelector(".controls__todo-btn");
+todoBtn.addEventListener("click", () => {
+    document.querySelector(".todo").classList.toggle("invisible");
 });
 
 function init() {

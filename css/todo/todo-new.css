@@ -1,13 +1,11 @@
 .todo-new {
     display: flex;
     justify-content: space-between;
-    background-color: var(--clr-backgorund);
-    box-shadow: var(--shadow-deep);
-    padding: 1rem;
-    border-radius: 0.6rem;
-    margin-bottom: 2rem;
+
     width: 36rem;
-    backdrop-filter: var(--blur);
+
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .todo-new__input-container {
@@ -58,7 +56,7 @@
     height: 2.4rem;
     border-radius: 50%;
     font-size: 1.3rem;
-    background-color: var(--clr-inactive);
+    background-color: var(--clr-backgorund);
     color: var(--clr-inactive-text);
     box-shadow: var(--shadow-light);
     transition: all 0.2s;

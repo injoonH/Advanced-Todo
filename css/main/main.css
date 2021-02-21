@@ -8,5 +8,6 @@
     backdrop-filter: var(--blur);
     box-shadow: var(--shadow-deep);
     padding-top: 2rem;
+    margin-bottom: 0.5rem;
     border-radius: 0.6rem;
 }

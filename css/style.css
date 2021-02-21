@@ -1,22 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
 @import "variables.css";
+@import "default.css";
 
 @import "theme-toggle.css";
 @import "show-background.css";
 
 @import "./main/main.css";
 @import "./todo/todo.css";
-
-* {
-    box-sizing: border-box;
-}
-
-body,
-input,
-textarea {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: var(--fw-regular);
-}
 
 body {
     background-image: url(../images/landscape-6.jpg);
@@ -49,25 +39,4 @@ body.background-only::before {
     content: "";
     opacity: 0;
     filter: brightness(2);
-}
-
-input,
-textarea {
-    background: none;
-    border: none;
-    outline: none;
-}
-
-textarea {
-    resize: none;
-}
-
-button {
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.invisible {
-    display: none;
 }

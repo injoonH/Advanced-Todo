@@ -1,11 +1,9 @@
 .todo-container {
-    background-color: var(--clr-backgorund);
-    box-shadow: var(--shadow-deep);
-    backdrop-filter: var(--blur);
-    padding: 1rem;
-    border-radius: 0.6rem;
     width: 36rem;
     height: 28rem;
+
+    padding: 1rem;
+    margin-bottom: 1rem;
     overflow-y: scroll;
 }
 

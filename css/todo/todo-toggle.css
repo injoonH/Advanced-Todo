@@ -3,13 +3,12 @@
     justify-content: center;
     align-items: center;
 
-    background-color: var(--clr-backgorund);
-    box-shadow: var(--shadow-deep);
-    padding: 1rem;
-    border-radius: 0.6rem;
+    width: 98%;
 
-    margin-bottom: 2rem;
-    backdrop-filter: var(--blur);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid var(--clr-inactive);
+    border-bottom: 1px solid var(--clr-inactive);
 }
 
 .todo-toggle-container > span {
