@@ -6,22 +6,25 @@
 }
 
 .controls > div {
-    width: 3.5rem;
+    width: 50%;
     height: 3.5rem;
-    border-radius: 50%;
     font-size: 1.8rem;
     box-shadow: var(--shadow-light);
-    background-color: var(--clr-inactive);
+    background-color: var(--clr-backgorund);
     color: var(--clr-inactive-text);
     cursor: pointer;
     transition: all 0.2s;
 }
 
+.controls__todo-btn {
+    border-radius: 0 0 0 0.6rem;
+}
+
+.controls__calendar-btn {
+    border-radius: 0 0 0.6rem 0;
+}
+
 .controls > div:hover {
     background-color: var(--clr-primary);
     color: var(--clr-primary-icon);
-}
-
-.controls > div:not(:last-child) {
-    margin-right: 1.5rem;
 }

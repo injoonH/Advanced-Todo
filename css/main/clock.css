@@ -1,6 +1,7 @@
 .clock {
     font-weight: var(--fw-bold);
     margin-bottom: 1rem;
+    padding: 0 2rem;
 }
 
 .clock__hour-min {

@@ -35,6 +35,12 @@
     border-radius: 0.2rem;
     transition: border-color 0.2s;
     margin-bottom: 0.1rem;
+    color: var(--clr-text);
+}
+
+.todo-new__input-container input::placeholder,
+.todo-new__input-container textarea::placeholder {
+    color: var(--clr-text);
 }
 
 .todo-new__input-container textarea:focus,
@@ -44,7 +50,7 @@
 
 .todo-new__input-container span {
     font-size: 0.9rem;
-    color: var(--clr-inactive);
+    color: var(--clr-inactive-text);
 }
 
 .todo-new > button {

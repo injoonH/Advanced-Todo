@@ -1,12 +1,11 @@
 :root {
     --clr-text: #000;
-    --clr-backgorund: #ffffff99;
+    --clr-backgorund: rgba(255, 255, 255, 0.6);
 
     --clr-primary: #ff4754;
-    --clr-primary-light: #e6868c;
     --clr-primary-icon: #fff;
 
-    --clr-inactive: #b1b1b1;
+    --clr-inactive: #918f8f;
     --clr-inactive-text: #666666;
 
     --fw-light: 300;

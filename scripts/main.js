@@ -1,6 +1,7 @@
 import Clock from "./modules/clock.js";
 import Greet from "./modules/greeting.js";
 import Todo from "./modules/todo.js";
+import Weather from "./modules/weather.js";
 
 const clock = new Clock(
     document.querySelector(".clock__hour-min"),
@@ -22,7 +23,15 @@ const todo = new Todo(
     document.querySelector(".todo-new")
 );
 
+const weather = new Weather();
+
 function init() {
+    document.body.style.backgroundImage = `url(./images/landscape-${Math.floor(
+        Math.random() * 9
+    )}.jpg)`;
+
+    weather.loadCoords();
+
     setInterval(() => {
         clock.update();
         clock.display();
@@ -30,9 +39,6 @@ function init() {
     }, 1000);
     greet.sayHello();
     todo.load();
-    document.body.style.backgroundImage = `url(./images/landscape-${Math.floor(
-        Math.random() * 9
-    )}.jpg)`;
 }
 
 init();
