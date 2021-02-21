@@ -1,0 +1,14 @@
+.show-background {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--clr-text-inverted);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.show-background:hover {
+    opacity: 1;
+}

@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
 @import "variables.css";
 
+@import "theme-toggle.css";
+@import "show-background.css";
+
 @import "./main/main.css";
 @import "./todo/todo.css";
 
@@ -39,6 +42,13 @@ body::before {
     background-color: #000;
     opacity: 0.3;
     z-index: -10;
+    transition: opacity 0.2s;
+}
+
+body.background-only::before {
+    content: "";
+    opacity: 0;
+    filter: brightness(2);
 }
 
 input,
