@@ -44,11 +44,19 @@ function init() {
 
     weather.loadCoords();
 
+    const time = new Date();
+    setTimeout(() => {
+        setInterval(() => {
+            clock.update();
+            clock.display();
+            greet.updateTime();
+        }, 1000);
+    }, 1000 - time.getMilliseconds());
+
     setInterval(() => {
-        clock.update();
-        clock.display();
-        greet.updateTime();
-    }, 1000);
+        weather.update();
+    }, 60000);
+
     greet.sayHello();
     todo.load();
 }

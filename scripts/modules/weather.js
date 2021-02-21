@@ -52,9 +52,12 @@ export default class Weather {
     loadCoords() {
         const loadedCoords = localStorage.getItem("coords");
         if (loadedCoords === null) this.askCoords();
-        else {
-            const coords = JSON.parse(loadedCoords);
-            this.getWeather(coords.latitude, coords.longitude);
-        }
+        else this.update();
+    }
+
+    update() {
+        const loadedCoords = localStorage.getItem("coords");
+        const coords = JSON.parse(loadedCoords);
+        this.getWeather(coords.latitude, coords.longitude);
     }
 }
