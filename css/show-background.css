@@ -12,3 +12,13 @@
 .show-background:hover {
     opacity: 1;
 }
+
+.become-transparent {
+    opacity: 0;
+}
+
+.theme-toggle,
+main,
+.todo {
+    transition: opacity 0.4s ease-in-out;
+}

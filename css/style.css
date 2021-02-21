@@ -42,7 +42,7 @@ body::before {
     background-color: #000;
     opacity: 0.3;
     z-index: -10;
-    transition: opacity 0.2s;
+    transition: opacity 0.4s;
 }
 
 body.background-only::before {

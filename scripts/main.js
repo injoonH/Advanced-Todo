@@ -33,13 +33,17 @@ const showBackgroundBtn = document.querySelector(".show-background");
 showBackgroundBtn.addEventListener("click", () => {
     document.body.classList.toggle("background-only");
     const children = document.body.children;
-    for (let i = 1; i < children.length - 2; i++)
-        children[i].classList.toggle("invisible");
+    for (let i = 1; i < children.length - 2; i++) {
+        children[i].classList.toggle("become-transparent");
+        children[i].addEventListener("transitioned", () => {
+            children[i].classList.toggle("invisible");
+        });
+    }
 });
 
 function init() {
     document.body.style.backgroundImage = `url(./images/landscape-${Math.floor(
-        Math.random() * 9
+        Math.random() * 11
     )}.jpg)`;
 
     weather.loadCoords();
