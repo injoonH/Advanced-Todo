@@ -59,9 +59,14 @@ todoBtn.addEventListener("click", () => {
 });
 
 function init() {
-    document.body.style.backgroundImage = `url(./images/landscape-${Math.floor(
-        Math.random() * 11
-    )}.jpg)`;
+    const IMAGE_NUM = 11;
+    const backgroundImage = new Image();
+    backgroundImage.onload = () => {
+        document.body.style.backgroundImage = `url(${backgroundImage.src})`;
+    };
+    backgroundImage.src = `./images/landscape-${Math.floor(
+        Math.random() * IMAGE_NUM
+    )}.jpg`;
 
     weather.loadCoords();
 
