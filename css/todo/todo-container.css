@@ -1,0 +1,65 @@
+.todo-container {
+    background-color: var(--clr-backgorund);
+    box-shadow: var(--shadow-deep);
+    padding: 1rem;
+    border-radius: 0.6rem;
+    width: 36rem;
+    min-height: 10rem;
+    max-height: 28rem;
+    overflow-y: scroll;
+}
+
+.todo-item {
+    background-color: var(--clr-backgorund);
+    box-shadow: var(--shadow-light);
+    border-radius: 0.6rem;
+    display: flex;
+}
+
+.todo-item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.todo-item > div {
+    width: calc(100% - 4rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-item > div > * {
+    width: 100%;
+}
+
+.todo-item__title {
+    font-size: 1.1rem;
+    font-weight: var(--fw-bold);
+}
+
+.todo-item__title,
+.todo-item__content {
+    padding: 0.5rem;
+}
+
+.todo-item > button {
+    width: 2rem;
+    background-color: var(--clr-inactive);
+    color: var(--clr-inactive-text);
+    border-left: 1px solid var(--clr-backgorund);
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-item > button:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-primary-icon);
+}
+
+.todo-item > button > i {
+    pointer-events: none;
+}
+
+.todo-item__remove-btn {
+    border-radius: 0 0.6rem 0.6rem 0;
+}

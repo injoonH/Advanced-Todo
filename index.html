@@ -17,6 +17,7 @@
         <input type="checkbox">
         <span class="theme-toggle__slider"></span>
     </label>
+
     <main>
         <section class="clock">
             <span class="clock__hour-min"></span>
@@ -38,6 +39,37 @@
             </div>
         </section>
     </main>
+
+    <aside class="todo">
+        <form class="todo-new">
+            <div class="todo-new__input-container">
+                <div>
+                    <input class="todo-new-title" type="text" maxlength="20" placeholder="Title" required>
+                    <span>max 20 characters</span>
+                </div>
+                <div>
+                    <textarea class="todo-new-content" maxlength="200" rows="5" cols="50"
+                        placeholder="Conent"></textarea>
+                    <span>max 200 characters</span>
+                </div>
+            </div>
+            <button type="submit">
+                <i class="far fa-save"></i>
+            </button>
+        </form>
+
+        <section class="todo-toggle-container">
+            <span>Pending</span>
+            <label class="todo-toggle">
+                <input type="checkbox">
+                <span class="todo-toggle__slider"></span>
+            </label>
+            <span>Finished</span>
+        </section>
+
+        <ul class="todo-container todo-pending"></ul>
+        <ul class="todo-container todo-finished invisible"></ul>
+    </aside>
 </body>
 
 </html>

@@ -1,0 +1,9 @@
+@import "todo-new.css";
+@import "todo-toggle.css";
+@import "todo-container.css";
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

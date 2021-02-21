@@ -1,18 +1,28 @@
-.theme-toggle {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+.todo-toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.todo-toggle-container > span {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+.todo-toggle {
+    position: relative;
     width: 4rem;
     height: 2rem;
 }
 
-.theme-toggle > input {
+.todo-toggle > input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-.theme-toggle__slider {
+.todo-toggle__slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -24,7 +34,7 @@
     transition: background-color 0.2s;
 }
 
-.theme-toggle__slider::before {
+.todo-toggle__slider::before {
     content: "";
     position: absolute;
     left: 0.3rem;
@@ -36,10 +46,10 @@
     transition: transform 0.2s;
 }
 
-.theme-toggle > input:checked + .theme-toggle__slider {
+.todo-toggle > input:checked + .todo-toggle__slider {
     background-color: var(--clr-primary);
 }
 
-.theme-toggle > input:checked + .theme-toggle__slider::before {
+.todo-toggle > input:checked + .todo-toggle__slider::before {
     transform: translateX(2rem);
 }

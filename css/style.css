@@ -1,38 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
 @import "variables.css";
-@import "animations.css";
 
-@import "./main/theme-toggle.css";
-@import "./main/clock.css";
-@import "./main/greeting.css";
-@import "./main/controls.css";
+@import "./main/main.css";
+@import "./todo/todo.css";
 
 * {
     box-sizing: border-box;
 }
 
 body,
-input {
+input,
+textarea {
     font-family: "Ubuntu", sans-serif;
     font-weight: var(--fw-regular);
 }
 
 body {
+    background-color: var(--clr-backgorund);
     color: var(--clr-text);
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 1.5rem 5rem;
 }
 
-input {
+input,
+textarea {
+    background: none;
     border: none;
     outline: none;
 }
 
-.invisible {
-    display: none;
+textarea {
+    resize: none;
 }
 
-main {
-    margin-left: 5rem;
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
 }

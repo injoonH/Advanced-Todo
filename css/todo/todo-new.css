@@ -1,0 +1,63 @@
+.todo-new {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-backgorund);
+    box-shadow: var(--shadow-deep);
+    padding: 1rem;
+    border-radius: 0.6rem;
+    margin-bottom: 2rem;
+    width: 36rem;
+}
+
+.todo-new__input-container {
+    margin-right: 2rem;
+}
+
+.todo-new__input-container > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-new__input-container > div:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.todo-new__input-container input {
+    width: 30ch;
+}
+
+.todo-new__input-container input,
+.todo-new__input-container textarea {
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    border: 2px solid var(--clr-inactive);
+    border-radius: 0.2rem;
+    transition: border-color 0.2s;
+    margin-bottom: 0.1rem;
+}
+
+.todo-new__input-container textarea:focus,
+.todo-new__input-container input:focus {
+    border-color: var(--clr-primary);
+}
+
+.todo-new__input-container span {
+    font-size: 0.9rem;
+    color: var(--clr-inactive);
+}
+
+.todo-new > button {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    background-color: var(--clr-inactive);
+    color: var(--clr-inactive-text);
+    box-shadow: var(--shadow-light);
+    transition: all 0.2s;
+}
+
+.todo-new > button:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-primary-icon);
+}
