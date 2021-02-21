@@ -19,6 +19,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 1.5rem 5rem;
+    overflow: hidden;
 }
 
 body::before {
@@ -38,6 +39,10 @@ body.background-only::before {
     content: "";
     opacity: 0;
     filter: brightness(2);
+}
+
+.hide-right {
+    transform: translateX(45rem);
 }
 
 .invisible,

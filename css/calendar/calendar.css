@@ -1,0 +1,6 @@
+.calendar {
+    background-color: var(--clr-backgorund);
+    backdrop-filter: var(--blur);
+    box-shadow: var(--shadow-deep);
+    border-radius: 0.6rem;
+}

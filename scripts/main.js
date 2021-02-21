@@ -55,7 +55,8 @@ showBackgroundBtn.addEventListener("change", () => {
 
 const todoBtn = document.querySelector(".controls__todo-btn");
 todoBtn.addEventListener("click", () => {
-    document.querySelector(".todo").classList.toggle("invisible");
+    // document.querySelector(".todo").classList.toggle("invisible");
+    document.querySelector(".todo").classList.toggle("hide-right");
 });
 
 function init() {
