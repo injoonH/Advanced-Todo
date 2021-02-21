@@ -2,6 +2,7 @@ import Clock from "./modules/clock.js";
 import Greet from "./modules/greeting.js";
 import Todo from "./modules/todo.js";
 import Weather from "./modules/weather.js";
+import ThemeToggle from "./modules/theme.js";
 
 const clock = new Clock(
     document.querySelector(".clock__hour-min"),
@@ -27,6 +28,10 @@ const weather = new Weather(
     document.querySelector(".weather-thermometer"),
     document.querySelector(".weather-temperature"),
     document.querySelector(".weather-location")
+);
+
+const themeToggle = new ThemeToggle(
+    document.querySelector(".theme-toggle > input")
 );
 
 const showBackgroundBtn = document.querySelector(".show-background > input");
@@ -75,6 +80,7 @@ function init() {
 
     greet.sayHello();
     todo.load();
+    themeToggle.loadTheme();
 }
 
 init();

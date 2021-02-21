@@ -9,15 +9,16 @@
     width: 50%;
     height: 3.5rem;
     font-size: 1.8rem;
-    box-shadow: var(--shadow-light);
     background-color: var(--clr-backgorund);
     color: var(--clr-inactive-text);
+    border-top: 1px solid rgba(145, 143, 143, 0.5);
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .controls__todo-btn {
     border-radius: 0 0 0 0.6rem;
+    border-right: 1px solid rgba(145, 143, 143, 0.5);
 }
 
 .controls__calendar-btn {

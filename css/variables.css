@@ -1,13 +1,16 @@
 :root {
     --clr-text: #000;
     --clr-text-inverted: #fff;
-    --clr-backgorund: rgba(255, 255, 255, 0.6);
+    --clr-backgorund: rgba(255, 255, 255, 0.4);
 
     --clr-primary: #ff4754;
     --clr-primary-icon: #fff;
 
-    --clr-inactive: #918f8f;
+    --clr-inactive: #d3d0d0;
     --clr-inactive-text: #666666;
+
+    --clr-btn: #d3d0d065;
+    --clr-btn-icon: #c5c5c5;
 
     --fw-light: 300;
     --fw-regular: 400;
@@ -18,4 +21,16 @@
         rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
 
     --blur: blur(5px);
+}
+
+.darkmode {
+    --clr-text: #fff;
+    --clr-text-inverted: #000;
+    --clr-backgorund: rgba(0, 0, 0, 0.4);
+
+    --clr-inactive: #6e6e6e;
+    --clr-inactive-text: #b8b8b8;
+
+    --clr-btn: #6969694b;
+    --clr-btn-icon: #686868;
 }

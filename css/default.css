@@ -25,8 +25,3 @@ button {
     outline: none;
     cursor: pointer;
 }
-
-.invisible,
-.hide {
-    display: none;
-}

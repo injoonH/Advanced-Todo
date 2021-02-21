@@ -40,3 +40,8 @@ body.background-only::before {
     opacity: 0;
     filter: brightness(2);
 }
+
+.invisible,
+.hide {
+    display: none;
+}

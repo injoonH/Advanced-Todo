@@ -41,8 +41,8 @@
 
 .todo-item > button {
     width: 2rem;
-    background-color: var(--clr-inactive);
-    color: var(--clr-inactive-text);
+    background-color: var(--clr-btn);
+    color: var(--clr-btn-icon);
     border-left: 1px solid var(--clr-backgorund);
     transition: all 0.2s;
     display: flex;

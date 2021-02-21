@@ -5,6 +5,7 @@
 
 .greeting__time {
     font-size: 2rem;
+    margin-right: 0.2rem;
 }
 
 .greeting__user-name {

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--clr-text-inverted);
+    color: #fff;
     font-size: 1rem;
     font-weight: var(--fw-light);
 }
