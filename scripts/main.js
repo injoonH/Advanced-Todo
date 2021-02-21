@@ -38,7 +38,7 @@ const showBackgroundBtn = document.querySelector(".show-background > input");
 showBackgroundBtn.addEventListener("change", () => {
     document.body.classList.toggle("background-only");
     const children = document.body.children;
-    for (let i = 1; i < children.length - 2; i++) {
+    for (let i = 1; i < children.length; i++) {
         if (showBackgroundBtn.checked) {
             children[i].classList.add("become-transparent");
             setTimeout(() => {
